@@ -1,0 +1,38 @@
+const int ir1 = A0;
+const int ir2 = A1;
+const int ir3 = A2;
+const int ir4 = A3;
+const int ir5 = A4;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int sensorValue1 = analogRead(ir1);
+  int sensorValue2 = analogRead(ir2);
+  int sensorValue3 = analogRead(ir3);
+  int sensorValue4 = analogRead(ir4);
+  int sensorValue5 = analogRead(ir5);
+
+  Serial.print("Sensor 1: ");
+  Serial.print(sensorValue1);
+  Serial.print("\t");
+
+  Serial.print("Sensor 2: ");
+  Serial.print(sensorValue2);
+  Serial.print("\t");
+
+  Serial.print("Sensor 3: ");
+  Serial.print(sensorValue3);
+  Serial.print("\t");
+
+  Serial.print("Sensor 4: ");
+  Serial.print(sensorValue4);
+  Serial.print("\t");
+
+  Serial.print("Sensor 5: ");
+  Serial.println(sensorValue5);
+
+  delay(500);
+}\
